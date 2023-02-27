@@ -1,4 +1,4 @@
-pimport requests
+import requests
 from github import Github
 import logging
 import os
