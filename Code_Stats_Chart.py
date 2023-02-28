@@ -1,5 +1,6 @@
 import requests
 from github import Github
+import base64
 import logging
 import os
 
