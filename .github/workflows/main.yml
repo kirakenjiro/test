@@ -29,7 +29,7 @@ jobs:
       - name: Updating_Stats # Runs program and updates stats.
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          PAT_KEY: ${{ secrets.GIT_PAT_KEY }}
+          GIT_PAT_KEY: ${{ secrets.GIT_PAT_KEY }}
         run: |
           echo "Running Code_Stats_Chart.py as a test scenario."
           python Code_Stats_Chart.py
