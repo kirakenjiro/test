@@ -35,9 +35,9 @@ def main():
 
     # Request wakatimeAPI and collect json from 'jsonData'.
     try:
+        jsonData = requests.get(wakatimeAPI).json()
         result = requests.get(wakatimeAPI)
         if result.status_code == 200:
-            jsonData = requests.get(wakatimeAPI).json()
             log = "Passed: Json was collected from the API."
             logging.info(log)
         elif result.status_code == 401:
